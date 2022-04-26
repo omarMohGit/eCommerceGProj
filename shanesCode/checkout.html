@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - CS Cuties</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkout.css">
+
+
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="js/checkout.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <div class="header-2">
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <a href="index.html">Return Back to Homepage</a>
+        </nav>
+    </div>
+
+
+
+
+
+    <div class="everything">
+
+        <div class="container-md" id="smile">
+            <div class="py-5">
+                <img src="images/logo.JPG" width="172" height="72" class="mb-3">
+                <p class="lead">&nbsp;Cart > Information > Shipping > Payment</p>
+            </div>
+
+            <h2 class="mb-3">Cart</h2>
+            <li style="font-size:small;">1x Sweater</li>
+            <li style="font-size:small;">2x Shirts</li>
+
+            <h2 class="mb-3">Contact Information</h2>
+
+            <form>
+
+                <div class="col-sm-6">
+                    <input id="email" type="text" class="form-control" placeholder="email">
+                    <div class="invalid-feedback">
+                        Enter an email
+                    </div>
+
+                    <div class="mt-3 form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefaultssss">
+                            Email me with news and offers
+                        </label>
+                    </div>
+                </div>
+
+
+                <h3 class="mt-5">Shipping Address</h3>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <input id="firstName" type="text" class="form-control" placeholder="First Name">
+                        <div class="invalid-feedback">
+                            Enter a first name
+                        </div>
+
+                    </div>
+                    <div class="col-sm-3">
+                        <input id="lastName" type="text" class="form-control" placeholder="Last Name">
+                        <div class="invalid-feedback">
+                            Enter a last name
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="mt-3 col-sm-6">
+                    <input id="address" type="text" class="form-control" placeholder="Address">
+                    <div class="invalid-feedback">
+                        Enter an address
+                    </div>
+                </div>
+                <div class="mt-3 col-sm-6">
+                    <input id="addInfo" type="text" class="form-control"
+                        placeholder="Appartment, suite, etc (optional)">
+                </div>
+                <div class="mt-3 col-sm-6">
+                    <input id="city" type="text" class="form-control" placeholder="city">
+                    <div class="invalid-feedback">
+                        Enter a city
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="mt-3 col-sm-2 ">
+                        <select id="country" class="form-control">
+                            <option value="CAD"> Canada</option>
+                        </select>
+                    </div>
+
+                    <div class="mt-3 col-sm-2 ">
+
+                        <select id="province" class="form-control">
+                            <option value="ON">Ontario</option>
+                            <option value="BC">British Columbia</option>
+                            <option value="AB">Alberta</option>
+                            <option value="SK">Saskatchewan</option>
+                            <option value="MN">Manitoba</option>
+                            <option value="QB">Quebec</option>
+                            <option value="NB">New Brunswick</option>
+                            <option value="NS">Nova Scotia</option>
+                            <option value="PEI">Prince Edward Island</option>
+                            <option value="NL">Newfoundland and Labrador</option>
+                            <option value="YK">Yukon</option>
+                            <option value="NT">Northwest Territories</option>
+                            <option value="NN">Nunavut</option>
+
+                        </select>
+                    </div>
+
+                    <div class="mt-3 col-sm-2 ">
+                        <input id="postCode" type="text" class="form-control" placeholder="postal code">
+                        <div class="invalid-feedback">
+                            Enter a postal code
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="mt-3 col-sm-6">
+                    <input id="phone" type="text" class="form-control" placeholder="Phone">
+                    <div class="invalid-feedback">
+                        Enter a phone number to use this delivery method
+                    </div>
+                </div>
+                <div class="mt-3  form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefaultssss">
+                        Save this information for next time
+                    </label>
+                </div>
+
+
+                <h3 class="mt-5 mb-3">Shipping Method</h3>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Standard
+                        3 to 9 business days (Free)
+                    </label>
+                </div>
+
+                <h3 class="mt-5 mb-3">Payment Method</h2>
+
+                    <div class="mt-3 col-sm-6 ">
+                        <input id="cc" type="text" class="form-control" placeholder="Card Number">
+                        <div class="invalid-feedback">
+                            Enter Credit Card Number
+                        </div>
+                    </div>
+                    <div class="mt-3 col-sm-6 ">
+                        <input id="ccName" type="text" class="form-control" placeholder="Name On Card">
+                        <div class="invalid-feedback">
+                            Enter credit card owners name
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="mt-3 col-sm-3 ">
+                            <input id="exp" type="text" class="form-control" placeholder="Expiration Date (MM/YY)">
+                            <div class="invalid-feedback">
+                                Enter experiation date
+                            </div>
+                        </div>
+                        <div class="mt-3 col-sm-3 ">
+                            <input id="secCode" type="text" class="form-control" placeholder="Security Code">
+                            <div class="invalid-feedback">
+                                Enter security code
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-5">
+
+                        <h4 style="color:grey;">
+                            Subtotal:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$55.00
+                        </h4>
+                        <h4 style="color:grey;">Tax:
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$55.00
+                        </h4>
+                        <h4 style="color:grey;">Shipping:
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$0.00
+                        </h4>
+
+                        <h4>Total:
+                            &nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$55.00
+                        </h4>
+
+                    </div>
+                    <button type="submit" class="btn btn-secondary btn-lg btn-block" id="lol">Pay Now</button>
+
+
+                    <div id="msg">
+                        <pre></pre>
+                    </div>
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
