@@ -2,9 +2,14 @@
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
+    <HelloWorld />
   </nav>
-  <router-view/>
+  <router-view />
 </template>
+<script>
+import HelloWorld from "@/components/HelloWorld.vue";
+</script>
+
 
 <style lang="scss">
 #app {
