@@ -5,6 +5,41 @@
 },
 {
     "name": "LETTER & EXPRESSION PRINT DRAWSTRING THERMAL HOODIE",
-    "price": 35.50,
+    "price": 47.50,
+    "sale": 55
+},
+{
+    "name": "CARTOON GRAPHIC THERMAL PULLOVER",
+    "price": 67.99,
+    "sale": 35
+},
+{
+    "name": "BUTTERFLY LETTER THERMAL PULLOVER",
+    "price": 85.20,
+    "sale": 27
+},
+{
+    "name": "BUTTERFLY PRINT KANGAROO POCKET DRAWSTRING THERMAL HOODIE",
+    "price": 95.75,
+    "sale": 20
+},
+{
+    "name": "BUTTERFLY & GALAXY PRINT THERMAL SWEATSHIRT",
+    "price": 65.50,
+    "sale": 13
+},
+{
+    "name": "BUTTERFLY LETTER THERMAL PULLOVER",
+    "price": 85.20,
     "sale": 0
+},
+{
+    "name": "CHINESE DRAGON GRAPHIC KANGAROO POCKET DROP SHOULDER DRAWSTRING THERMAL HOODIE",
+    "price": 105.50,
+    "sale": 0
+},
+{
+    "name": "CARTOON AND KOREAN LETTER GRAPHIC DRAWSTRING THERMAL LINED HOODIE",
+    "price": 94.78,
+    "sale": 5
 }]

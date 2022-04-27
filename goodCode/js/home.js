@@ -1,3 +1,25 @@
+//Here I used Ajax to access the server to update the information for our products
+var ourRequest = new XMLHttpRequest();
+ourRequest.open('GET', 'http://127.0.0.1:2500/UpdatePrices',true);
+ourRequest.onload = function(){
+    let data = JSON.parse(this.responseText);
+    
+    for(let i =1; i<=9; i++){
+        var price = data[i-1]["price"];
+        console.log(data[i-1]["price"]);
+        document.getElementById(`price${i}`).innerHTML= price;
+    }
+
+    for(let i =1; i<=9; i++){
+        var sale = data[i-1]["sale"];
+        console.log(data[i-1]["sale"]);
+        document.getElementById(`disc${i}`).innerHTML= sale + "%";
+    }
+
+}
+//This actually sends our request to the webpage hosted by our server
+ourRequest.send();
+
 function butt() {
     var del = document.getElementsByClassName('delButt')
     var numItem = document.getElementsByClassName('totalAmountItem')
