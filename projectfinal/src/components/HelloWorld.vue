@@ -1,4 +1,5 @@
 <template>
+<body>
   <header>
     <link rel="preconnect" href="https://fonts.gstatic.com">
    
@@ -19,8 +20,8 @@
         <a href="#category">category</a>
         <a href="#product">product</a>
         <a href="#contact">contact</a>
-        <a href="login.html">login</a>
-        <a href="checkout.html">checkout</a>
+        <router-link to href="">login</a>
+        <a href="../shanesCode/checkout.html">checkout</a>
       </nav>
     </div>
   </header>
@@ -423,10 +424,12 @@
     <h1 class="credit"> created by <span> CUTIES,  </span> | all rights reserved! </h1>
 
 </section>
+</body>
 </template>
 
 
 <script>
+import CheckOut from "./CheckOut.vue"
 export default {
   name: 'HelloWorld',
 

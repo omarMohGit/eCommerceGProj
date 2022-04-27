@@ -1,16 +1,18 @@
 <template>
-  <nav>
-    <HelloWorld/>
-  </nav>
+ 
+
+  
+
   <router-view />
 </template>
 <script>
-import HelloWorld from "@/components/HelloWorld.vue";
+// import HelloWorld from "@/components/HelloWorld.vue";
+// import CheckOut from "@/components/CheckOut.vue";
+
 export default {
   name: 'App',
   components:{
-   HelloWorld,
-    
+ 
     
   }
 }

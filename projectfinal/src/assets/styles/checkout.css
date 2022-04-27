@@ -1,0 +1,40 @@
+*:not(.header-2) {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(232, 227, 224);
+    text-align: auto;
+}
+
+.header-2 {
+    background-color: white;
+}
+
+.everything {
+    margin: auto;
+    height: auto;
+    width: auto;
+}
+
+.ty {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.graphy {
+    text-align: center;
+}
+
+table {
+    border: black;
+    margin: auto;
+    border-collapse: collapse;
+
+}
+
+th {
+    border: 1px solid black;
+
+    text-align: center;
+    font-weight: bold;
+    height: 40px;
+    width: 150px;
+}
