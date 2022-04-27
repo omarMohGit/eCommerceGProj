@@ -21,11 +21,9 @@
             <div id="menu-bar" class="fas fa-bars"></div>
             <nav class="navbar">
                 <a href="/">home</a>
-                <a href="#category">category</a>
-                <a href="#product">product</a>
                 <a href="#contact">contact</a>
                 <a href="#">login</a>
-                <a href="/checkout">checkout</a>
+               
 
             </nav>
 
@@ -209,7 +207,7 @@ export default {
 
             if (username == adminInfo[0].username && password == adminInfo[0].password) {
                 console.log(username + " logged in")
-                window.location.href = "adminPage.html";
+                window.location.href = "/adminpage";
             }
             else {
                 alert("Info wrong try again")

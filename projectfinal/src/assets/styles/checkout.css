@@ -24,17 +24,52 @@
 }
 
 table {
-    border: black;
+   
     margin: auto;
     border-collapse: collapse;
 
 }
 
 th {
-    border: 1px solid black;
+   
 
     text-align: center;
     font-weight: bold;
     height: 40px;
     width: 150px;
+}
+.rod {
+    min-width: 100%;
+
+}
+
+#delivery {
+    bottom: 100px;
+    position: absolute;
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: faster;
+    -webkit-animation-duration: 5s;
+}
+
+@-webkit-keyframes faster {
+    0% {
+        left: 0;
+    }
+
+    40% {
+        left: 100%;
+    }
+
+    100% {
+        left: 20;
+    }
+}
+.mb-3{
+    text-align: left;
+}
+.mt-5{
+    text-align: left;
+}
+.form-check-label{
+    text-align: left;
 }

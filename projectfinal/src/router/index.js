@@ -4,6 +4,8 @@ import HomeView from '../views/HomeView.vue'
 import CheckoutView from '../views/CheckOutView.vue'
 import PageNotFoundView from '@/views/PageNotFoundView.vue'
 import LoginView from '../views/LoginView.vue'
+import ConfirmView from '../views/ConfirmView'
+import AdminPageView from '../views/AdminPageView'
 
 const routes = [
   {
@@ -35,7 +37,20 @@ const routes = [
     name: 'login',
     component: LoginView
     
+  },
+  {
+    path:'/confirm',
+    name: 'confirm',
+    component: ConfirmView
+    
+  },
+  {
+    path:'/adminpage',
+    name: 'adminpage',
+    component: AdminPageView
+    
   }
+
 
  ]
 

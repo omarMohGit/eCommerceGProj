@@ -1,6 +1,8 @@
 <template>
 <body>
 
+ 
+
     <div class="header-2">
         <div id="menu-bar" class="fas fa-bars"></div>
         <nav class="navbar">
@@ -20,9 +22,6 @@
                 <p class="lead">&nbsp;Cart > Information > Shipping > Payment</p>
             </div>
 
-            <h2 class="mb-3">Cart</h2>
-            <li style="font-size:small;">1x Sweater</li>
-            <li style="font-size:small;">2x Shirts</li>
 
             <h2 class="mb-3">Contact Information</h2>
 
@@ -66,10 +65,6 @@
                     <div class="invalid-feedback">
                         Enter an address
                     </div>
-                </div>
-                <div class="mt-3 col-sm-6">
-                    <input id="addInfo" type="text" class="form-control"
-                        placeholder="Appartment, suite, etc (optional)">
                 </div>
                 <div class="mt-3 col-sm-6">
                     <input id="city" type="text" class="form-control" placeholder="city">
@@ -119,7 +114,7 @@
 
 
                 <div class="mt-3 col-sm-6">
-                    <input id="phone" type="text" class="form-control" placeholder="Phone">
+                    <input id="phone" type="number" class="form-control" placeholder="Phone">
                     <div class="invalid-feedback">
                         Enter a phone number to use this delivery method
                     </div>
@@ -144,7 +139,7 @@
                 <h3 class="mt-5 mb-3">Payment Method</h3>
 
                     <div class="mt-3 col-sm-6 ">
-                        <input id="cc" type="text" class="form-control" placeholder="Card Number">
+                        <input id="cc" type="number" class="form-control" placeholder="Card Number">
                         <div class="invalid-feedback">
                             Enter Credit Card Number
                         </div>
@@ -170,24 +165,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="py-5">
-
-                        <h4 style="color:grey;">
-                            Subtotal:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$55.00
-                        </h4>
-                        <h4 style="color:grey;">Tax:
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$55.00
-                        </h4>
-                        <h4 style="color:grey;">Shipping:
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$0.00
-                        </h4>
-
-                        <h4>Total:
-                            &nbsp;
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$55.00
-                        </h4>
-
-                    </div>
                     <button type="submit" class="btn btn-secondary btn-lg btn-block" id="lol">Pay Now</button>
 
 
@@ -207,8 +184,11 @@
 
 
 
+
     </div>
-    </body>
+
+    
+</body>
 
 
 
@@ -233,7 +213,6 @@
             fName: document.getElementById('firstName').value,
             lastName: document.getElementById('lastName').value,
             address: document.getElementById('address').value,
-            addressExtra: document.getElementById('addInfo').value,
             city: document.getElementById('city').value,
             country: document.getElementById('country').value,
             province: document.getElementById('province').value,
@@ -266,7 +245,7 @@
             //saving to localStorage
             localStorage.setItem('All orders', JSON.stringify(orders));
             //document.forms[0].reset();
-            window.location.href = "confirm.html";
+            window.location.href = "/confirm";
         }
         console.log(a)
 

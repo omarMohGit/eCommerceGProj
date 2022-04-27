@@ -67,8 +67,7 @@
 
 
     <!-- category section starts  -->
-
-    <section class="category" id="category">
+     <section class="category" id="category">
 
         <h1 class="heading">shop by <span>category</span></h1>
 
@@ -84,20 +83,15 @@
                 <h3>Hoodies</h3>
                 <p>upto 44% off</p>
                 <img src="" alt="">
-                <a href="#product" class="btn">shop now</a>
+                <a href="#hoodies" class="btn"  >shop now</a>
             </div>
             <div class="box">
                 <h3>Pants</h3>
                 <p>upto 35% off</p>
                 <img src="" alt="">
-                <a href="#product" class="btn">shop now</a>
+                <a href="#pants" class="btn">shop now</a>
             </div>
-            <div class="box">
-                <h3>Shoes</h3>
-                <p>upto 12% off</p>
-                <img src="" alt="">
-                <a href="#product" class="btn">shop now</a>
-            </div>
+            
 
         </div>
 
@@ -160,10 +154,10 @@
                     <a href="#" class="fas fa-eye"></a>
                 </div>
 
-                <img class="pics" src="../assets/product-2.jpg">
+                <img class="pics" src="../assets/product-4.jpg">
                 <h3>
                     <span class="iName">
-                        Letter & Expression Print Drawstring Thermal Hoodie
+                        Become The Change Thermal Pullover
                     </span>
                 </h3>
                 <div class="stars">
@@ -190,10 +184,10 @@
                     <a href="#" class="fas fa-eye"></a>
                 </div>
 
-                <img class="pics" src="../assets/product-3.jpg">
+                <img class="pics" src="../assets/product-7.jpg">
                 <h3>
                     <span class="iName">
-                        Mushroom Toad Hoodie
+                        Mushroom Toad Sweatshirt
                     </span>
                 </h3>
                 <div class="stars">
@@ -212,7 +206,7 @@
 
 
 
-            <div class="box product">
+            <div  class="box product" id="hoodies">
                 <span class="discount" id="disc4">-45%</span>
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
@@ -220,10 +214,10 @@
                     <a href="#" class="fas fa-eye"></a>
                 </div>
 
-                <img class="pics" src="../assets/product-4.jpg">
+                <img class="pics" src="../assets/product-2.jpg">
                 <h3>
                     <span class="iName">
-                        Become The Change Thermal Pullover
+                        Letter & Expression Print Drawstring Thermal Hoodie
                     </span>
                 </h3>
                 <div class="stars">
@@ -251,7 +245,7 @@
                 <img class="pics" src="../assets/product-5.jpg">
                 <h3>
                     <span class="iName">
-                        Butterfly Letter Thermal Pullover
+                        Good Vibes with Butterfly Hoodie
                     </span>
                 </h3>
                 <div class="stars">
@@ -276,10 +270,10 @@
                     <a href="#" class="fas fa-eye"></a>
                 </div>
 
-                <img class="pics" src="../assets/product-6.jpg">
+                <img class="pics" src="../assets/product-9.jpg">
                 <h3>
                     <span class="iName">
-                        Out of this World Butterfly Thermal Hoodie
+                        Dragon eating good Thermal Hoodie
                     </span>
                 </h3>
                 <div class="stars">
@@ -296,7 +290,7 @@
                 </div>
             </div>
 
-            <div class="box product">
+            <div class="box product" id="pants">
                 <span class="discount" id="disc7">-35%</span>
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
@@ -304,10 +298,10 @@
                     <a href="#" class="fas fa-eye"></a>
                 </div>
 
-                <img class="pics" src="../assets/product-7.jpg">
+                <img class="pics" src="../assets/product-7.webp">
                 <h3>
                     <span class="iName">
-                        Toadman Shredding Thermal Sweatshirt
+                        Houndstooth Print Drawstring Waist Pants
                     </span>
                 </h3>
                 <div class="stars">
@@ -332,10 +326,10 @@
                     <a href="#" class="fas fa-eye"></a>
                 </div>
 
-                <img class="pics" src="../assets/product-8.jpg">
+                <img class="pics" src="../assets/product-8.webp">
                 <h3>
                     <span class="iName">
-                        Dragon Borne Thermal Pullover
+                        Drawstring Waist Patched Detail Pants
                     </span>
                 </h3>
                 <div class="stars">
@@ -359,10 +353,10 @@
                     <a href="#" class="fas fa-eye"></a>
                 </div>
 
-                <img class="pics" src="../assets/product-9.jpg">
+                <img class="pics" src="../assets/product-9.webp">
                 <h3>
                     <span class="iName">
-                        Dragon eating good Thermal Hoodie
+                        Drawstring Waist Colorblock Cargo Pants
                     </span>
                 </h3>
                 <div class="stars">
@@ -382,6 +376,8 @@
         </div>
 
     </section>
+
+   
 
     <!-- product section ends -->
 
@@ -433,7 +429,7 @@
     <!-- newsletter section ends -->
 
     <!-- footer section starts  -->
-    <section class="container content-section" id="cart">
+   <section class="container content-section" id="cart">
         <div class="lineup">
             <span class="cart-item cart-header x">Item</span>
             <span class="itemCost cart-header x">Price</span>
@@ -465,31 +461,31 @@
             <div class="box">
                 <h3>our location</h3>
                 <div class="links">
-                    <a href="#">canada</a>
-                    <a href="#">USA</a>
-                    <a href="#">france</a>
-                    <a href="#">japan</a>
-                    <a href="#">russia</a>
+                    <a>canada</a>
+                    <a>USA</a>
+                    <a>france</a>
+                    <a>japan</a>
+                    <a>russia</a>
                 </div>
             </div>
 
             <div class="box">
                 <h3>quick links</h3>
                 <div class="links">
-                    <a href="#">home</a>
-                    <a href="#">category</a>
-                    <a href="#">product</a>
-                    <a href="#">deal</a>
-                    <a href="#">contact</a>
+                    <a>home</a>
+                    <a>category</a>
+                    <a>product</a>
+                    <a>deal</a>
+                    <a>contact</a>
                 </div>
             </div>
 
             <div class="box">
                 <h3>download app</h3>
                 <div class="links">
-                    <a href="#">google play</a>
-                    <a href="#">window xp</a>
-                    <a href="#">app store</a>
+                    <a>google play</a>
+                    <a>window xp</a>
+                    <a>app store</a>
                 </div>
             </div>
 
@@ -498,7 +494,6 @@
         <h1 class="credit"> created by <span> CUTIES, </span> | all rights reserved! </h1>
 
     </section>
-
     <!-- footer section ends -->
 
 
