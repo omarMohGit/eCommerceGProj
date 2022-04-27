@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CS Cuties</title>
 
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cc.css">
+
+    <script src="js/home.js" async></script>
 
 </head>
 
@@ -36,7 +38,7 @@
                 <a href="#product">product</a>
                 <a href="#contact">contact</a>
                 <a href="login.html">login</a>
-                <a href="checkout.html">checkout</a>
+                <a href="#cart">cart</a>
 
             </nav>
 
@@ -133,15 +135,20 @@
 
         <div class="box-container">
 
-            <div class="box">
+            <div class="box product">
                 <span class="discount">-33%</span>
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
                     <a href="#" class="fas fa-share"></a>
                     <a href="#" class="fas fa-eye"></a>
                 </div>
-                <img src="images/product-1.webp" alt="">
-                <h3>Smile Face Print Thermal Lined Oversized Sweatshirt</h3>
+
+                <img class="pics" src="images/product-1.webp">
+                <h3>
+                    <span class="iName">
+                        Smile Face Print Thermal Lined Oversized Sweatshirt
+                    </span>
+                </h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -149,174 +156,32 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <div class="price"> $100.50 <span> $130.20 </span> </div>
-                <div class="quantity">
-                    <span>quantity : </span>
-                    <input type="number" min="1" max="1000" value="1">
 
+                <div class="productInfo">
+                    <span class="cost">$109.99</span>
+                    <button class="btn  add" type="button"> Add To Cart</button>
                 </div>
-                <a href="#" class="btn">add to cart</a>
             </div>
 
-            <div class="box">
-                <span class="discount">-45%</span>
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <img src="images/product-2.webp" alt="">
-                <h3>Letter & Expression Print Drawstring Thermal Hoodie</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="price"> $100.50 <span> $130.20 </span> </div>
-                <div class="quantity">
-                    <span>quantity : </span>
-                    <input type="number" min="1" max="1000" value="1">
 
-                </div>
-                <a href="#" class="btn">add to cart</a>
-            </div>
 
-            <div class="box">
-                <span class="discount">-52%</span>
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <img src="images/product-3.webp" alt="">
-                <h3>CARTOON GRAPHIC THERMAL PULLOVER</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="price"> $100.50 <span> $130.20 </span> </div>
-                <div class="quantity">
-                    <span>quantity : </span>
-                    <input type="number" min="1" max="1000" value="1">
 
-                </div>
-                <a href="#" class="btn">add to cart</a>
-            </div>
 
-            <div class="box">
-                <span class="discount">-13%</span>
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <img src="images/product-4.webp" alt="">
-                <h3>Butterfly Letter THERMAL PULLOVER</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="price"> $100.50 <span> $130.20 </span> </div>
-                <div class="quantity">
-                    <span>quantity : </span>
-                    <input type="number" min="1" max="1000" value="1">
 
-                </div>
-                <a href="#" class="btn">add to cart</a>
-            </div>
-
-            <div class="box">
-                <span class="discount">-20%</span>
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <img src="images/product-5.webp" alt="">
-                <h3>Butterfly Print Kangaroo Pocket Drawstring Thermal Hoodie</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="price"> $100.50 <span> $130.20 </span> </div>
-                <div class="quantity">
-                    <span>quantity : </span>
-                    <input type="number" min="1" max="1000" value="1">
-
-                </div>
-                <a href="#" class="btn">add to cart</a>
-            </div>
-
-            <div class="box">
-                <span class="discount">-29%</span>
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <img src="images/product-6.webp" alt="">
-                <h3>Butterfly & Galaxy Print Thermal Sweatshirt</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="price"> $100.50 <span> $130.20 </span> </div>
-                <div class="quantity">
-                    <span>quantity : </span>
-                    <input type="number" min="1" max="1000" value="1">
-
-                </div>
-                <a href="#" class="btn">add to cart</a>
-            </div>
-
-            <div class="box">
-                <span class="discount">-55%</span>
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <img src="images/product-7.webp" alt="">
-                <h3>Cartoon Graphic Thermal Pullover</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="price"> $100.50 <span> $130.20 </span> </div>
-                <div class="quantity">
-                    <span>quantity : </span>
-                    <input type="number" min="1" max="1000" value="1">
-
-                </div>
-                <a href="#" class="btn">add to cart</a>
-            </div>
-
-            <div class="box">
+            <div class="box product">
                 <span class="discount">-30%</span>
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
                     <a href="#" class="fas fa-share"></a>
                     <a href="#" class="fas fa-eye"></a>
                 </div>
-                <img src="images/product-8.webp" alt="">
-                <h3>Chinese Dragon Graphic Kangaroo Pocket Drop Shoulder Drawstring Thermal Hoodie</h3>
+
+                <img class="pics" src="images/product-2.webp">
+                <h3>
+                    <span class="iName">
+                        Letter & Expression Print Drawstring Thermal Hoodie
+                    </span>
+                </h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -324,24 +189,29 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <div class="price"> $100.50 <span> $130.20 </span> </div>
-                <div class="quantity">
-                    <span>quantity : </span>
-                    <input type="number" min="1" max="1000" value="1">
 
+                <div class="productInfo">
+                    <span class="cost">$79.99</span>
+                    <button class="btn  add" type="button">Add To Cart</button>
                 </div>
-                <a href="#" class="btn">add to cart</a>
             </div>
+            <!---- --->
 
-            <div class="box">
-                <span class="discount">-40%</span>
+
+            <div class="box product">
+                <span class="discount">-15%</span>
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
                     <a href="#" class="fas fa-share"></a>
                     <a href="#" class="fas fa-eye"></a>
                 </div>
-                <img src="images/product-9.webp" alt="">
-                <h3>Cartoon And Korean Letter Graphic Drawstring Thermal Lined Hoodie</h3>
+
+                <img class="pics" src="images/product-3.webp">
+                <h3>
+                    <span class="iName">
+                        Mushroom Toad Hoodie
+                    </span>
+                </h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -349,13 +219,180 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <div class="price"> $100.50 <span> $130.20 </span> </div>
-                <div class="quantity">
-                    <span>quantity : </span>
-                    <input type="number" min="1" max="1000" value="1">
 
+                <div class="productInfo">
+                    <span class="cost">$59.99</span>
+                    <button class="btn  add" type="button">Add To Cart</button>
                 </div>
-                <a href="#" class="btn">add to cart</a>
+            </div>
+
+
+
+            <div class="box product">
+                <span class="discount">-45%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+
+                <img class="pics" src="images/product-4.webp">
+                <h3>
+                    <span class="iName">
+                        Become The Change Thermal Pullover
+                    </span>
+                </h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+
+                <div class="productInfo">
+                    <span class="cost">$79.99</span>
+                    <button class="btn  add" type="button">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="box product">
+                <span class="discount">-25%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+
+                <img class="pics" src="images/product-5.webp">
+                <h3>
+                    <span class="iName">
+                        Butterfly Letter Thermal Pullover
+                    </span>
+                </h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+
+                <div class="productInfo">
+                    <span class="cost">$69.99</span>
+                    <button class="btn  add" type="button">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="box product">
+                <span class="discount">-15%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+
+                <img class="pics" src="images/product-6.webp">
+                <h3>
+                    <span class="iName">
+                        Out of this World Butterfly Thermal Hoodie
+                    </span>
+                </h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+
+                <div class="productInfo">
+                    <span class="cost">$99.99</span>
+                    <button class="btn  add" type="button">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="box product">
+                <span class="discount">-35%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+
+                <img class="pics" src="images/product-7.webp">
+                <h3>
+                    <span class="iName">
+                        Toadman Shredding Thermal Sweatshirt
+                    </span>
+                </h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+
+                <div class="productInfo">
+                    <span class="cost">$110.00</span>
+                    <button class="btn  add" type="button">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="box product">
+                <span class="discount">-25%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+
+                <img class="pics" src="images/product-8.webp">
+                <h3>
+                    <span class="iName">
+                        Dragon Borne Thermal Pullover
+                    </span>
+                </h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+
+                <div class="productInfo">
+                    <span class="cost">$50.00</span>
+                    <button class="btn  add" type="button">Add To Cart</button>
+                </div>
+            </div>
+            <div class="box product">
+                <span class="discount">-20%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+
+                <img class="pics" src="images/product-9.webp">
+                <h3>
+                    <span class="iName">
+                        Dragon eating good Thermal Hoodie
+                    </span>
+                </h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+
+                <div class="productInfo">
+                    <span class="cost">$45.00</span>
+                    <button class="btn  add" type="button">Add To Cart</button>
+                </div>
             </div>
 
         </div>
@@ -365,17 +402,6 @@
     <!-- product section ends -->
 
     <!-- revuenue chart section starts  -->
-
-    <section class="revenue" id="revenue">
-
-        <div class="content">
-
-
-            <span>revenue placeholder</span>
-
-        </div>
-
-    </section>
 
     <!-- revuenue chart section ends -->
 
@@ -423,6 +449,20 @@
     <!-- newsletter section ends -->
 
     <!-- footer section starts  -->
+    <section class="container content-section" id="cart">
+        <div class="lineup">
+            <span class="cart-item cart-header x">Item</span>
+            <span class="itemCost cart-header x">Price</span>
+            <span class="cart-quantity cart-header x">Quantity</span>
+        </div>
+        <div class="carti">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="fTotal">$0</span>
+        </div>
+        <button class="btn btn-primary buy" type="button">PURCHASE</button>
+    </section>
 
     <section class="footer">
 
@@ -432,10 +472,9 @@
 
                 <p></p>
                 <div class="share">
-                    <a href="#" class="btn fab fa-facebook-f"></a>
-                    <a href="#" class="btn fab fa-twitter"></a>
-                    <a href="#" class="btn fab fa-instagram"></a>
-                    <a href="#" class="btn fab fa-linkedin"></a>
+                    <a href="https://www.facebook.com" class="btn fab fa-facebook-f"></a>
+                    <a href="https://www.twitter.com" class="btn fab fa-twitter"></a>
+                    <a href="https://www.instagram.com" class="btn fab fa-instagram"></a>
                 </div>
             </div>
 

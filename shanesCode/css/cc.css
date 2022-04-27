@@ -1,0 +1,97 @@
+.cart-header {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+}
+
+.x {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.lineup {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.itemCost {
+    width: 25%;
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+}
+
+.cart-quantity {
+    width: 15%;
+}
+
+.inside {
+    color: rgb(0, 0, 0);
+    margin-left: 1em;
+    font-size: 1.5em;
+}
+
+
+
+.reframe {
+    width: 175px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.delButt {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+}
+
+
+
+.totalAmountItem {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(250, 247, 247, 0.996);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1em;
+    margin-right: 25px;
+}
+
+
+
+
+.cart-total {
+    text-align: end;
+}
+
+
+
+.fTotal {
+    color: #000000;
+    font-size: 1.1em;
+}
+
+.iName {
+    font-family: 'SuisseIntl';
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+.add {
+    font-family: 'SuisseIntl';
+    display: block;
+    width: 100%;
+
+    background-color: #000000;
+    font-size: 16px;
+    text-align: center;
+}
+
+.add:hover {
+    background-color: rgba(58, 57, 57, 0.685)
+}

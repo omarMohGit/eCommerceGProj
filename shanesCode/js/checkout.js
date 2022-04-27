@@ -1,29 +1,3 @@
-/*
-(function ace() {
-    'use strict';
-    window.addEventListener('load', function () {
-        var formReq = document.getElementsByClassName('needs-validation');
-        var validation = Array.prototype.filter.call(formReq, function (form) {
-            form.addEventListener('submit', function (event) {
-                if (form.checkValidity() === false) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-                form.classList.add('was-validated');
-
-            });
-
-        });
-
-
-    });
-
-
-})();
-*/
-
-
-
 
 
 
@@ -36,7 +10,6 @@ const newOrder = (event) => {
         fName: document.getElementById('firstName').value,
         lastName: document.getElementById('lastName').value,
         address: document.getElementById('address').value,
-        addressExtra: document.getElementById('addInfo').value,
         city: document.getElementById('city').value,
         country: document.getElementById('country').value,
         province: document.getElementById('province').value,
@@ -72,15 +45,16 @@ const newOrder = (event) => {
         window.location.href = "confirm.html";
     }
     console.log(a)
-
-
-
-
     console.warn('added', { orders });
 
+
 }
+
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('lol').addEventListener('click', newOrder);
 });
+
+
+
 
 
