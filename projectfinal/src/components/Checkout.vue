@@ -33,7 +33,7 @@
                         Enter an email
                     </div>
 
-                    <div class="mt-3 form-check">
+                    <div class="mt-3-form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                         <label class="form-check-label" for="flexCheckDefaultssss">
                             Email me with news and offers
@@ -119,7 +119,7 @@
                         Enter a phone number to use this delivery method
                     </div>
                 </div>
-                <div class="mt-3  form-check">
+                <div class="mt-3-form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefaultssss">
                         Save this information for next time
@@ -165,7 +165,7 @@
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-secondary btn-lg btn-block" id="lol">Pay Now</button>
+                    <button type="submit" class="btn-btn-secondary-btn-lg-btn-block" id="lol">Pay Now</button>
 
 
                     <div id="msg">

@@ -5,13 +5,14 @@
 }
 
 .header-2 {
-    background-color: white;
+    background-color: white ;
 }
 
 .everything {
     margin: auto;
     height: auto;
     width: auto;
+    
 }
 
 .ty {
@@ -70,6 +71,16 @@ th {
 .mt-5{
     text-align: left;
 }
-.form-check-label{
+.mt-3-form-check{
     text-align: left;
+}
+.form-check{
+    text-align: left;
+}
+.btn-btn-secondary-btn-lg-btn-block{
+    height: 25px;
+    width: 40px;
+   background-color: bisque;
+    align-items: center;
+
 }

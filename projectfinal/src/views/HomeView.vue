@@ -4,6 +4,7 @@
     <!-- header section starts  -->
 
     <header>
+       
 
         <div class="header-1">
             <a href="#" class="logo"><img src="../assets/mainlogo.jpeg" width="172" height="72"></a>
@@ -31,6 +32,11 @@
 
 
     </header>
+     <div class="time">
+            <h1 id="time"></h1>
+            <img class="sun" src="../assets/Sun.svg.png" alt="">
+            <img class="moon" src="../assets/moon.png" alt="">
+    </div>
 
     <!-- header section ends -->
 
@@ -521,6 +527,8 @@
 
 
 <script>
+ import $ from "jquery";
+ 
 
 export default {
   name: 'HelloWorld',
@@ -659,6 +667,33 @@ export default {
   function purchaseClicked() {
       window.location.href = "/checkout";
   }
+    
+    async function load() {
+    let url = 'https://www.timeapi.io/api/Time/current/zone?timeZone=Canada/Eastern';
+    let obj = await (await fetch(url)).json();
+    var time = obj.time;
+    var hour = obj.hour;
+    var minute = obj.minute;
+    console.log(obj);
+    console.log(time);
+    console.log(hour);
+    console.log(minute);
+    document.getElementById("time").innerHTML = time;
+
+    if (hour >= 7 && minute >= 0) {
+        console.log(hour + " " + minute + "hey")
+
+        $('.sun').toggle('slow');
+
+    }
+    else if (hour <= 20 && minute >= 0) {
+        $('.moon').toggle('slow');
+    }
+
+
+}
+
+  load();
   butt()
 
     }
