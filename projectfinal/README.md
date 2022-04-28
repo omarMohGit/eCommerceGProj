@@ -9,6 +9,10 @@ Google Slides: https://docs.google.com/presentation/d/1vk358GUX4BKurj8r636JIWenx
 
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+INSTRUCTIONS:
+
+Projectfinal IS THE FOLDER THAT MUST BE RUN 
+Server IS THE FOLDER THAT NEEDS TO BE RUN FOR THE SERVER(PRICES TO WORK) TO RUN.
 
 #Disclaimer: If you have trouble running the vue file, Please install :
 npm install -g @vue/cli-service
