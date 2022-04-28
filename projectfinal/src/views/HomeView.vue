@@ -114,7 +114,7 @@
         <div class="box-container">
 
             <div class="box product">
-                <span class="discount" id="disc1">-33%</span>
+                <span class="discount" id="disc1"></span>
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
                     <a href="#" class="fas fa-share"></a>
@@ -136,7 +136,7 @@
                 </div>
 
                 <div class="productInfo">
-                    <span class="cost" id="price1">$109.99</span>
+                    <span class="cost" id="price1"></span>
                     <button class="btn  add" type="button"> Add To Cart</button>
                 </div>
             </div>
@@ -147,7 +147,7 @@
 
 
             <div class="box product">
-                <span class="discount" id="disc2">-30%</span>
+                <span class="discount" id="disc2"></span>
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
                     <a href="#" class="fas fa-share"></a>
@@ -169,7 +169,7 @@
                 </div>
 
                 <div class="productInfo">
-                    <span class="cost" id="price2">$79.99</span>
+                    <span class="cost" id="price2"></span>
                     <button class="btn  add" type="button">Add To Cart</button>
                 </div>
             </div>
@@ -177,7 +177,7 @@
 
 
             <div class="box product">
-                <span class="discount" id="disc3">-15%</span>
+                <span class="discount" id="disc3"></span>
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
                     <a href="#" class="fas fa-share"></a>
@@ -199,7 +199,7 @@
                 </div>
 
                 <div class="productInfo">
-                    <span class="cost" id="price3">$59.99</span>
+                    <span class="cost" id="price3"></span>
                     <button class="btn  add" type="button">Add To Cart</button>
                 </div>
             </div>
@@ -207,7 +207,7 @@
 
 
             <div  class="box product" id="hoodies">
-                <span class="discount" id="disc4">-45%</span>
+                <span class="discount" id="disc4"></span>
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
                     <a href="#" class="fas fa-share"></a>
@@ -229,13 +229,13 @@
                 </div>
 
                 <div class="productInfo">
-                    <span class="cost" id="price4">$79.99</span>
+                    <span class="cost" id="price4"></span>
                     <button class="btn  add" type="button">Add To Cart</button>
                 </div>
             </div>
 
             <div class="box product">
-                <span class="discount" id="disc5">-25%</span>
+                <span class="discount" id="disc5"></span>
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
                     <a href="#" class="fas fa-share"></a>
@@ -257,13 +257,13 @@
                 </div>
 
                 <div class="productInfo">
-                    <span class="cost" id="price5">$69.99</span>
+                    <span class="cost" id="price5"></span>
                     <button class="btn  add" type="button">Add To Cart</button>
                 </div>
             </div>
 
             <div class="box product">
-                <span class="discount" id="disc6">-15%</span>
+                <span class="discount" id="disc6"></span>
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
                     <a href="#" class="fas fa-share"></a>
@@ -285,13 +285,13 @@
                 </div>
 
                 <div class="productInfo">
-                    <span class="cost" id="price6">$99.99</span>
+                    <span class="cost" id="price6"></span>
                     <button class="btn  add" type="button">Add To Cart</button>
                 </div>
             </div>
 
             <div class="box product" id="pants">
-                <span class="discount" id="disc7">-35%</span>
+                <span class="discount" id="disc7"></span>
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
                     <a href="#" class="fas fa-share"></a>
@@ -313,13 +313,13 @@
                 </div>
 
                 <div class="productInfo">
-                    <span class="cost" id="price7">$110.00</span>
+                    <span class="cost" id="price7"></span>
                     <button class="btn  add" type="button">Add To Cart</button>
                 </div>
             </div>
 
             <div class="box product">
-                <span class="discount" id="disc8">-25%</span>
+                <span class="discount" id="disc8"></span>
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
                     <a href="#" class="fas fa-share"></a>
@@ -341,12 +341,12 @@
                 </div>
 
                 <div class="productInfo">
-                    <span class="cost" id="price8">$50.00</span>
+                    <span class="cost" id="price8"></span>
                     <button class="btn  add" type="button">Add To Cart</button>
                 </div>
             </div>
             <div class="box product">
-                <span class="discount" id="disc9">-20%</span>
+                <span class="discount" id="disc9"></span>
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
                     <a href="#" class="fas fa-share"></a>
@@ -368,7 +368,7 @@
                 </div>
 
                 <div class="productInfo">
-                    <span class="cost" id="price9">$45.00</span>
+                    <span class="cost" id="price9"></span>
                     <button class="btn  add" type="button">Add To Cart</button>
                 </div>
             </div>
@@ -525,6 +525,7 @@
 export default {
   name: 'HelloWorld',
   mounted(){
+
     //Here I used Ajax to access the server to update the information for our products
   var ourRequest = new XMLHttpRequest();
   ourRequest.open('GET', 'http://127.0.0.1:2500/UpdatePrices',true);
@@ -534,13 +535,13 @@ export default {
       for(let i =1; i<=9; i++){
           var price = data[i-1]["price"];
           console.log(data[i-1]["price"]);
-          document.getElementById(`price${i}`).innerHTML= price;
+          document.getElementById(`price${i}`).innerHTML= "$" + price;
       }
 
       for(let i =1; i<=9; i++){
           var sale = data[i-1]["sale"];
           console.log(data[i-1]["sale"]);
-          document.getElementById(`disc${i}`).innerHTML= sale + "%";
+          document.getElementById(`disc${i}`).innerHTML= "-" +sale + "%";
       }
 
   }
